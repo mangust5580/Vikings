@@ -1,0 +1,82 @@
+.page-header {
+  background-color: $ebony-clay;
+  background-size: cover;
+  background-position: center 60px;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 900px;
+  position: relative;
+  &__top {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(
+      180deg,
+      #111213 0%,
+      #111213 43.62%,
+      rgba(32, 31, 33, 0) 86.33%
+    );
+  }
+  &__top-inner {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 1200px;
+    padding: 0 40px;
+  }
+  &__logo {
+    position: static;
+    margin-right: 30px;
+  }
+  &__main-nav {
+    background-image: none;
+  }
+  &__season-info {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+  }
+  &__season-info-inner {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 1200px;
+    background-color: $cod-gray;
+    padding: 45px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__season-num {
+    margin-right: 40px;
+    & b {
+      display: inline-block;
+      width: 100%;
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 112px;
+      color: $white;
+    }
+    & span {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 42px;
+      color: $white;
+      text-transform: uppercase;
+    }
+  }
+  &__season-descr {
+  }
+  &__season-descr-text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: $white;
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

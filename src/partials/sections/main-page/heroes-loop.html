@@ -1,0 +1,25 @@
+<div class="heroes__swiper-slide swiper-slide">
+  <div class="heroes__swiper-slide-img-block">
+    <picture class="heroes__swiper-slide-picture">
+      <source type="image/avif" srcset="
+          images/heroes-slider/@picture.image.avif 1x,
+          images/heroes-slider/@picture.image.avif 2x
+        ">
+      <source type="image/webp" srcset="
+          images/heroes-slider/@picture.image.webp 1x,
+          images/heroes-slider/@picture.image.webp 2x
+        ">
+      <img width="775" height="450" src="images/heroes-slider/@picture.image.jpg"
+        srcset="images/heroes-slider/@picture.image@2x.jpg 2x" alt="@picture.alt">
+    </picture>
+    <div class="heroes__swiper-btns">
+      <button class="heroes__swiper-btn heroes__swiper-btn--prev" aria-label="Предыдущий слайд"></button>
+      <button class="heroes__swiper-btn heroes__swiper-btn--next" aria-label="Следующий слайд"></button>
+    </div>
+  </div>
+  <div class="heroes__swiper-slide-descr">
+    <h3 class="heroes__swiper-slide-descr-title">@descr.title</h3>
+    <p class="heroes__swiper-slide-descr-text">@descr.preface</p>
+    <p class="heroes__swiper__slide-descr-text">@descr.text</p>
+  </div>
+</div>

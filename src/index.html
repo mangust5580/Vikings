@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('blocks/head.html', {
+title: "Vikings | Главная"
+})
+
+<body>
+  <div class="site-container">
+    @include('blocks/main-header.html')
+    <main>
+      @include('sections/main-page/about.html')
+      @include('sections/main-page/trailer.html')
+      @include('sections/main-page/seasons.html')
+      @include('sections/main-page/heroes.html')
+    </main>
+    @include('blocks/page-footer.html')
+  </div>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
+

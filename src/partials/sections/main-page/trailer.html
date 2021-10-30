@@ -1,0 +1,23 @@
+<section class="trailer" style="
+background-image: -webkit-image-set(
+  url(images/trailer-bg.jpg) 1x,
+  url(images/trailer-bg@2x.jpg) 2x
+);
+">
+  <div class="container">
+    <h2 class="visually-hidden">Трэйлер сериала</h2>
+    <div class="trailer__inner">
+      <h3 class="trailer__tagline">The Storm <span>Is Coming...</span></h3>
+      <button class="trailer__btn js-modal-btn" data-video-id="1YVxm0GKhkM" aria-label="Воспроизвести видео">
+        @include('blocks/icon.html', {
+          className: 'trailer__btn-icon',
+          width: 100,
+          height: 100,
+          href: 'icon-play'
+        })
+        <span>Посмотреть трейлер сериала</span>
+      </button>
+    </div>
+  </div>
+</section>
+

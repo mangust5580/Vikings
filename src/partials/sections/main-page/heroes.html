@@ -1,0 +1,12 @@
+<section class="heroes">
+  <div class="container">
+    <h2 class="section-title">Главные герои</h2>
+    <div class="heroes__inner section-inner">
+      <div class="heroes__swiper swiper">
+        <div class="swiper-wrapper">
+          @loop('sections/main-page/heroes-loop.html', 'data/sections/main-page/heroes-loop.json')
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

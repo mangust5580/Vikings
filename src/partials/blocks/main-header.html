@@ -1,0 +1,22 @@
+<header class="main-header" style="
+background-image: -webkit-image-set(
+  url(images/main-header-bg.jpg) 1x,
+  url(images/main-header-bg@2x.jpg) 2x
+);
+">
+  <div class="container">
+    <div class="main-header__inner">
+      @include('blocks/logo.html', {
+        href: false,
+        className: 'main-header__logo',
+        image: 'logo',
+        width: 880,
+        height: 321,
+        alt: "Логотип сайта"
+      })
+      @include('blocks/main-nav.html', {
+        className: 'main-header__main-nav'
+      })
+    </div>
+  </div>
+</header>

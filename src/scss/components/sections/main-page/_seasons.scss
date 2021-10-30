@@ -1,0 +1,64 @@
+.seasons {
+  &__inner {
+  }
+  &__list {
+    @extend %list;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 75px;
+    counter-reset: counter;
+  }
+  &__item {
+    position: relative;
+    &::before {
+      content: "0" counter(counter);
+      counter-increment: counter;
+      position: absolute;
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 112px;
+      color: $mahogany;
+      top: -72px;
+      z-index: -1;
+    }
+    &:nth-child(n + 10) {
+      &::before {
+        content: counter(counter);
+      }
+    }
+  }
+  &__link {
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s;
+    &:hover {
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: $cod-gray;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        opacity: 0.8;
+      }
+      &::after {
+        content: "Cмотреть";
+        position: absolute;
+        background-color: $cod-gray;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        box-sizing: border-box;
+        padding: 12px 30px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        color: $white;
+      }
+    }
+  }
+}
