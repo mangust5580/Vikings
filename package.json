@@ -1,7 +1,7 @@
 {
   "name": "Vikings",
   "version": "1.0.0",
-  "description": "Vikings",
+  "description": "Vikings сериал",
   "scripts": {
     "html": "node-w3c-validator -f lint -evH -i app/**/*.html",
     "dev": "gulp",
