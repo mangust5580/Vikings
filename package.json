@@ -1,7 +1,7 @@
 {
-  "name": "gulp-build",
+  "name": "Vikings",
   "version": "1.0.0",
-  "description": "gulp-build",
+  "description": "Vikings",
   "scripts": {
     "html": "node-w3c-validator -f lint -evH -i app/**/*.html",
     "dev": "gulp",
